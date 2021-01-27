@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAMPLE SMART ON FHIR APP</title>
+    <script src="https://cdn.jsdelivr.net/npm/fhirclient/build/fhir-client.js"></script>
+</head>
+
+<body>
+
+    <H1>Launch Point....</H1>
+    <script>
+        FHIR.oauth2.authorize({
+
+          clientId: "",
+
+          scope: "launch openid fhirUser patient/*.read",
+        
+          redirectUri: "index.html"
+        });
+
+    </script>
+    
+</body>
+</html>
